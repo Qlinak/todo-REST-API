@@ -75,7 +75,7 @@ Say our todoDB has the following documents:
 ]
 ```
 
-1. Request: GET: localhost:3000/todos
+1. Request: GET: localhost:3000/todos <br>
 Response:
 ```
 // get all documents in todoDB
@@ -114,7 +114,7 @@ Response:
     }
 ]
 ```
-2. request: POST: localhost:3000/todos?name=clean the house&description=guest come at 2022-11-10&dueDate=2022-11-10&status=done
+2. request: POST: localhost:3000/todos?name=clean the house&description=guest come at 2022-11-10&dueDate=2022-11-10&status=done <br>
 Response: 
 ```
 // add a new document to todoDB
@@ -122,16 +122,16 @@ Response:
     "Msg": "Successful added to the database!"
 }
 ```
-Now if you look at your todoDB there should be one more document added
-3. request : DELETE: localhost:3000/todos
+Now if you look at your todoDB there should be one more document added <br>
+3. request : DELETE: localhost:3000/todos <br>
 response
 ```
 {
     "Msg": "Deleted All"
 }
 ```
-Now if you look at your todoDB there should be no documents
-4. request : GET : localhost:3000/todos/Pet%20Fluffy
+Now if you look at your todoDB there should be no documents <br>
+4. request : GET : localhost:3000/todos/Pet%20Fluffy <br>
 response:
 ```
 // get a specified todo
@@ -144,15 +144,15 @@ response:
     "__v": 0
 }
 ```
-5. request: PATCH : localhost:3000/todos/Pet%20Fluffy?name=Feed Fluffy
+5. request: PATCH : localhost:3000/todos/Pet%20Fluffy?name=Feed Fluffy <br>
 response: 
 ```
 {
     "Msg": "PATCH: Updated!"
 }
 ```
-Now if you look at your todoDB the todo "Pet Fluffy" should change to "Feed Fluffy"
-6. request : PUT: localhost:3000/todos/Feed%20Fluffy?name=Pet Fluffy
+Now if you look at your todoDB the todo "Pet Fluffy" should change to "Feed Fluffy" <br>
+6. request : PUT: localhost:3000/todos/Feed%20Fluffy?name=Pet Fluffy <br>
 response:
 ```
 // say if you want to change the name of "Feed Fluffy" to "Pet Fluffy" but you issue "PUT" instead of "PATCH" by mistake
@@ -160,7 +160,7 @@ response:
     "Msg": "PUT: Updated!"
 }
 ```
-Now if you request : GET localhost:3000/todos/Pet%20Fluffy
+Now if you request : GET localhost:3000/todos/Pet%20Fluffy <br>
 you will get 
 ```
 // the whole thing is replaced!!
@@ -170,7 +170,7 @@ you will get
     "__v": 0
 }
 ```
-7. request : DELETE : localhost:3000/todos/Pet%20Fluffy
+7. request : DELETE : localhost:3000/todos/Pet%20Fluffy <br>
 response: 
 ```
 {
@@ -180,9 +180,9 @@ response:
 Now look at todoDB should not have the "Pet Fluffy" document
 
 ### Filtering example
-1.You can specify to return only the todo with a specific *<STATUS>* by GET : localhost:3000/todos?status=[<STATUS>]
-e.g.
-Request : GET : localhost:3000/todos?status=[pending]
+1.You can specify to return only the todo with a specific *<STATUS>* by GET : localhost:3000/todos?status=[STATUS] <br>
+e.g. <br>
+Request : GET : localhost:3000/todos?status=[pending] <br>
 Response: 
 ```
 [
@@ -204,9 +204,9 @@ Response:
     }
 ]
 ```
-2. You can also specify a particular date, before and/or after which will the return todos be desired
-e.g. 
-Request : GET : localhost:3000/todos?before=[2022-11-09]
+2. You can also specify a particular date, before and/or after which will the return todos be desired <br>
+e.g. <br>
+Request : GET : localhost:3000/todos?before=[2022-11-09] <br>
 Response: 
 ```
 [
@@ -236,7 +236,7 @@ Response:
     }
 ]
 ```
-Request : GET : localhost:3000/todos?after=[2022-11-03]
+Request : GET : localhost:3000/todos?after=[2022-11-03] <br>
 Response:
 ```
 [
@@ -266,7 +266,7 @@ Response:
     }
 ]
 ```
-Request : GET : localhost:3000/todos?before=[2022-11-09]&after=[2022-11-03]
+Request : GET : localhost:3000/todos?before=[2022-11-09]&after=[2022-11-03] <br>
 Response: 
 ```
 [
@@ -298,7 +298,7 @@ sort=asc(name) // sort todos by name in an ascending order
 sort=desc(name) // sort todos by name in an descending order
 ```
 e.g.
-Request: GET: localhost:3000/todos?sort=asc(dueDate)
+Request: GET: localhost:3000/todos?sort=asc(dueDate) <br>
 Response: 
 ```
 [
