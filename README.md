@@ -13,6 +13,14 @@
 ```
 3. All data is send through JSON
 
+## Index
+* [Pre-requitsite](#pre-requitsite)
+* [Root end point](#root-end-point)
+* [End points](#end-points)
+* [Request and Response examples](#request-and-response-examples)
+* [Filtering example](#filtering-example)
+* [Sorting example](#sorting-example)
+
 
 ### Pre-requitsite
 1. have mongoDB installed on your machine and create a db called **todoDB**
@@ -36,7 +44,7 @@ http://localhost:3000/todos
 | `PUT` | /todos/:whichTODO | Replace an *existing* todo |
 | `DELETE` | /todos/:whichTODO | Delete an *existing* todo | 
 
-### Request & Response examples
+### Request and Response examples
 Say our todoDB has the following documents:
 ```
 [
@@ -289,7 +297,7 @@ Response:
 ]
 ```
 
-### Sorting examples:
+### Sorting examples
 You can also get the result sorted by the *dueDate* or *name* if you specify
 ```
 sort=asc(dueDate) // sort todos by dueDate in an ascending order
