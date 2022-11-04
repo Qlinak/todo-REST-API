@@ -8,7 +8,7 @@
   name: String,
   description: String,
   dueDate: String, // yyyy-mm-dd
-  status: String // done, pending, expire
+  status: String // done, pending, expired
 }
 ```
 3. All data is send through JSON
