@@ -28,7 +28,84 @@ http://localhost:3000/todos
 | `DELETE` | /todos/:whichTODO | Delete an *existing* todo | 
 
 ### Request & Response examples
+Say our todoDB has the following documents:
+```
+[
+    {
+        "_id": "6364bd7b780b694f0c5eeba0",
+        "name": "Built a REST API",
+        "description": "A RESTful todo API that support filtering and sorting",
+        "dueDate": "2022-11-07",
+        "status": "pending",
+        "__v": 0
+    },
+    {
+        "_id": "6364bdac780b694f0c5eeba2",
+        "name": "Meet with advisor",
+        "description": "Room 1010",
+        "dueDate": "2022-11-08",
+        "status": "done",
+        "__v": 0
+    },
+    {
+        "_id": "6364bde3780b694f0c5eeba4",
+        "name": "Pet Fluffy",
+        "description": "Buy her some cat food",
+        "dueDate": "2022-11-03",
+        "status": "expired",
+        "__v": 0
+    },
+    {
+        "_id": "6364be24780b694f0c5eeba6",
+        "name": "Algo homework",
+        "description": "three question left",
+        "dueDate": "2022-11-09",
+        "status": "pending",
+        "__v": 0
+    }
+]
+```
 
+1. Request: GET: localhost:3000/todos
+Response:
+```
+[
+    {
+        "_id": "6364bd7b780b694f0c5eeba0",
+        "name": "Built a REST API",
+        "description": "A RESTful todo API that support filtering and sorting",
+        "dueDate": "2022-11-07",
+        "status": "pending",
+        "__v": 0
+    },
+    {
+        "_id": "6364bdac780b694f0c5eeba2",
+        "name": "Meet with advisor",
+        "description": "Room 1010",
+        "dueDate": "2022-11-08",
+        "status": "done",
+        "__v": 0
+    },
+    {
+        "_id": "6364bde3780b694f0c5eeba4",
+        "name": "Pet Fluffy",
+        "description": "Buy her some cat food",
+        "dueDate": "2022-11-03",
+        "status": "expired",
+        "__v": 0
+    },
+    {
+        "_id": "6364be24780b694f0c5eeba6",
+        "name": "Algo homework",
+        "description": "three question left",
+        "dueDate": "2022-11-09",
+        "status": "pending",
+        "__v": 0
+    }
+]
+```
+2. request: POST: localhost:3000/todos?name=clean the house&description=guest come at 2022-11-10&dueDate=2022-11-10&status=done
+Response: 
 ### Pre-requitsite
 1. have mongoDB installed on your machine and create a db called **todoDB**
 2. `cd` to the folder where you place **app.js**
