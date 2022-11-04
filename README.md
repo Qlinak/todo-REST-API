@@ -179,7 +179,7 @@ response:
 ```
 Now look at todoDB should not have the "Pet Fluffy" document
 
-###Filtering example
+### Filtering example
 1.You can specify to return only the todo with a specific *<STATUS>* by GET : localhost:3000/todos?status=[<STATUS>]
 e.g.
 Request : GET : localhost:3000/todos?status=[pending]
@@ -289,7 +289,7 @@ Response:
 ]
 ```
 
-###Sorting examples:
+### Sorting examples:
 You can also get the result sorted by the *dueDate* or *name* if you specify
 ```
 sort=asc(dueDate) // sort todos by dueDate in an ascending order
