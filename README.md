@@ -188,7 +188,7 @@ response:
 Now look at todoDB should not have the "Pet Fluffy" document
 
 ### Filtering example
-1.You can specify to return only the todo with a specific *<STATUS>* by GET : localhost:3000/todos?status=[STATUS] <br>
+1.You can specify to return only the todo with a specific *STATUS* by GET : localhost:3000/todos?status=[STATUS] <br>
 e.g. <br>
 Request : GET : localhost:3000/todos?status=[pending] <br>
 Response: 
