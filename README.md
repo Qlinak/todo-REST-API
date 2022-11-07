@@ -19,7 +19,7 @@
 * [End points](#end-points)
 * [Request and Response examples](#request-and-response-examples)
 * [Filtering example](#filtering-example)
-* [Sorting example](#sorting-example)
+* [Sorting examples](#sorting-examples)
 
 
 ### Pre-requitsite
